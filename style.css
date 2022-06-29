@@ -177,7 +177,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: -80px;
     padding: 0 20px;
 }
 
@@ -206,6 +206,7 @@ body{
     height: 350px;
 
     padding: 10px;
+    margin-top: -130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,26 +223,56 @@ body{
     letter-spacing: 1px;
     
 
-    font-family: 'Folklore', sans-serif;
+    
 }
 
 .opciones{
-    margin-left: 5px;
+    margin-left: 8px;
     margin-bottom: 10px;
 
     display: flex;
     align-items: center;
-
-    
-
 }
 
-.icono-menu{
-    width: 25px;
-    margin-right: 5px;
+.main{
+    width: 100%;
+    height: auto;
 
-    filter: opacity(0.5) drop-shadow(0 0 0 #ffe820); 
-} 
+    grid-area: main;
 
+    display: grid;
+    grid-template-areas: 
+    "section section article article article";
+}
 
+section, 
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  border-radius: 20px;
+}
+
+.section{
+    grid-area: section;
+    background-color: crimson;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.article{
+    grid-area: article;
+    background-color: chartreuse;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+
+}
