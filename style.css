@@ -132,7 +132,7 @@ body{
 }
 
 .header__input{
-    height: 2rem;
+    height: 1rem;
     width: 300px;
     border: 0;
     outline: 0;
@@ -161,11 +161,11 @@ body{
     height: 70px;
 
     grid-area: nav;
-    border-radius: 20px;
+   
 
     /* background-color: orange; */
     background: rgba(122, 117, 114, 0.24);
-    border-radius: 16px;
+    
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
@@ -179,6 +179,7 @@ body{
     justify-content: space-evenly;
     margin-top: -80px;
     padding: 0 20px;
+    
 }
 
 .btn-filtro{
@@ -198,8 +199,15 @@ body{
     font-family: 'Folklore', sans-serif;
     letter-spacing: 1px;
 
-    cursor: pointer;        
+    cursor: pointer;  
+    transition: transform 0.4s;      
 }
+
+.btn-filtro:hover{
+    transform: translateY(-9px);
+    background: linear-gradient(to right, #92928e, #c0beb0);
+}
+
 
 .menu-izquierda{
     width: 220px;
@@ -221,18 +229,31 @@ body{
     color: #ffe820;
     font-family: 'Folklore', sans-serif;
     letter-spacing: 1px;
-    
-
-    
 }
 
 .opciones{
     margin-left: 8px;
     margin-bottom: 10px;
-
     display: flex;
     align-items: center;
+
+    cursor: pointer;
+    
+    transition: 0.2s;    
 }
+
+.opciones:hover{
+    background: grey;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    border: 1px solid rgba(218, 195, 117, 0.3);
+}
+
+/* .icono-menu{
+    width: 25px;
+    margin-right: 5px;
+} */
 
 .main{
     width: 100%;
@@ -274,5 +295,5 @@ article{
     justify-content: center;
     align-items: center;
     align-content: space-evenly;
-
 }
+
