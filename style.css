@@ -255,28 +255,8 @@ body{
     margin-right: 5px;
 } */
 
-.main{
-    width: 100%;
-    height: auto;
-
-    grid-area: main;
-
-    display: grid;
-    grid-template-areas: 
-    "section section article article article";
-}
-
-section, 
-article{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 20px;
-}
-
-.section{
-    grid-area: section;
+.video__proximamente{
+    grid-area: video__proximamente;
     background-color: crimson;
 
     display: flex;
@@ -284,16 +264,93 @@ article{
     justify-content: space-around;
 }
 
-.article{
-    grid-area: article;
-    background-color: chartreuse;
-
-    display: grid;
+/*.videos{
+    grid-area: videos;
+    /*background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    
+    /*display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 
     justify-content: center;
     align-items: center;
-    align-content: space-evenly;
+    align-content: space-evenly; */
+
+
+
+
+
+.main{
+    width: 100%;
+    height: auto;
+
+    /*grid-area: main;*/
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 210px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "video__proximamente video__proximamente videos videos"
+    "video__proximamente video__proximamente  videos videos";
 }
+
+.video1{
+    grid-area: video1;
+    background: pink;
+}
+
+.video2{
+    grid-area: video2;
+    background: orange;
+}
+
+.video3{
+    grid-area: video3;
+    background: blue;
+}
+
+.video4{
+    grid-area: video4;
+    background: blueviolet;
+}
+
+.video5{
+    grid-area: video5;
+    background: rgb(95, 93, 89);
+}
+
+.video6{
+    grid-area: video6;
+    background: green;
+}
+
+.videos{
+    grid-area: videos;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 210px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "video1 video2 video3"
+    "video4 video5 video6";
+}
+
+
+
+
+/*section, 
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+}*/
+
+
+
 
