@@ -12,7 +12,7 @@ body{
     grid-template-areas: 
     "header"
     "nav"
-    "div"
+    /* "div" */
     "main";
 
     gap: 20px;
@@ -179,6 +179,8 @@ body{
     justify-content: space-evenly;
     margin-top: -80px;
     padding: 0 20px;
+
+    gap: 10px;
     
 }
 
@@ -213,25 +215,26 @@ body{
     width: 220px;
     height: 350px;
 
-    padding: 10px;
+    /* padding: 5px; */
+    margin-left: -50px;
     margin-top: -130px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 
-    /* background-color: red; */
-    background: rgba(122, 117, 114, 0.24);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border: 1px solid rgba(122, 117, 114, 0.53);
-    color: #ffe820;
-    font-family: 'Folklore', sans-serif;
-    letter-spacing: 1px;
+    background-color: red;
+    /* background: rgba(122, 117, 114, 0.24); */
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* backdrop-filter: blur(2px); */
+    /* -webkit-backdrop-filter: blur(2px); */
+    /* border: 1px solid rgba(122, 117, 114, 0.53); */
+    /* color: #ffe820; */
+    /* font-family: 'Folklore', sans-serif; */
+    /* letter-spacing: 1px; */
 }
 
-.opciones{
+/* .opciones{
     margin-left: 8px;
     margin-bottom: 10px;
     display: flex;
@@ -240,7 +243,7 @@ body{
     cursor: pointer;
     
     transition: 0.2s;    
-}
+} */
 
 .opciones:hover{
     background: grey;
@@ -262,8 +265,15 @@ body{
     grid-area: main;
 
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
+    /* "menu menu article article article"  */
+    /* "menu menu section section section" */
+    /* "menu section article article article" */
+    "section section article article article"
+    "section section article article article"
     "section section article article article";
+    
+    gap: 10px;
 }
 
 section, 
