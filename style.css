@@ -13,7 +13,8 @@ body{
     "header"
     "nav"
     "div"
-    "main";
+    "main"
+    "footer";
 
     gap: 20px;
 
@@ -208,15 +209,33 @@ body{
     background: linear-gradient(to right, #92928e, #c0beb0);
 }
 
+.main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    height: auto;
+
+    /*grid-area: main;*/
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 210px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "menu-izquierda video__proximamente video__proximamente videos videos"
+    "menu-izquierda video__proximamente video__proximamente videos videos";
+    /*"menu-izquierda videos videos videos videos"; */
+}
 
 .menu-izquierda{
-    width: 220px;
-    height: 350px;
+    
+    grid-area: menu-izquierda;
+    width: 100%;
+    height: 400px;
 
-    padding: 10px;
-    margin-top: -130px;
+    
     display: flex;
-    justify-content: center;
+    
     align-items: center;
 
     /* background-color: red; */
@@ -264,6 +283,8 @@ body{
     justify-content: space-around;
 }
 
+
+
 /*.videos{
     grid-area: videos;
     /*background-color: chartreuse;
@@ -283,20 +304,7 @@ body{
 
 
 
-.main{
-    width: 100%;
-    height: auto;
 
-    /*grid-area: main;*/
-
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: 210px;
-    grid-gap: 1rem;
-    grid-template-areas: 
-    "video__proximamente video__proximamente videos videos"
-    "video__proximamente video__proximamente  videos videos";
-}
 
 .video1{
     grid-area: video1;
@@ -329,14 +337,15 @@ body{
 }
 
 .videos{
+    margin-right: 1rem;
     grid-area: videos;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 210px;
     grid-gap: 1rem;
     grid-template-areas: 
-    "video1 video2 video3"
-    "video4 video5 video6";
+    "video1 video2"
+    "video3 video4";
 }
 
 
@@ -352,5 +361,10 @@ article{
 }*/
 
 
-
+.footer{
+    font-family: 'Star Jedi', Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffe820;
+    padding-top: 10rem;
+    margin-left: 2rem;
+}
 
