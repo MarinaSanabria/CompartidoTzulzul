@@ -339,9 +339,15 @@ body{
         padding: 0 10px;
     } 
 
+
+
     .titulo-logo{
         display: none;
     }
+
+    /*.recomendados{
+        display: block;
+    } */
 
     .footer{
         bottom:0;
