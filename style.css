@@ -348,15 +348,11 @@ body{
 
 @media only screen and (min-width:415px) and (max-width:1365px){
     
-
     .header{
         width: 768px;
         height: 85px;
         padding: 0 10px;
-        
     } 
-
-
 
     .titulo-logo{
         display: none;
@@ -369,10 +365,6 @@ body{
         display: flex;
         
         align-items:baseline;
-        
-        
-        
-        
     }
 
     .button-header{
@@ -404,14 +396,10 @@ body{
         margin-bottom: 1rem;*/
     }
 
-    
-
     /*.header__search{
         width: 20rem;
-    }
-*/
-    
-    
+    }*/
+ 
     .header__input{
         /*height: 1rem;*/
         width: 200px;
@@ -481,4 +469,136 @@ body{
 
 /* display: inline-flex;*/
    
+}
+
+@media only screen and (min-width:414px) and (max-width:800px) {
+    .header{
+        width: 400px;
+        height: 85px;
+        padding: 0 10px;
+    } 
+
+    .titulo-logo{
+        display: none;
+    }
+
+    .header-btn{
+        margin-right: 3px;
+        margin-left: 7px;
+        margin-top: 10px ; 
+        display: flex;
+        
+        align-items:baseline;
+    }
+
+    .button-header{
+        height: 2.5rem;
+        width: 8rem;
+        font-size: 13px;
+    }
+
+    #button-1{
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    #button-2{
+        margin-left: 3px;
+    }
+
+    .nav-middle{
+        width: 400px;
+        height: 230px;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:center;        
+    }
+
+    .nav-btn{
+        width: 400px;
+    }
+
+    .btn-filtro{
+        width: 8.3rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 1.8rem;
+        /*margin-top: 1rem;
+        margin-bottom: 1rem;*/
+    }
+
+    .header__search{
+        width: 4rem;
+        margin-left: 5px;
+    }
+ 
+    .header__input{
+        /*height: 1rem;*/
+        width: 20px;
+    }
+    
+    .button__search{
+        width: 10px;
+    }
+
+    .main{
+        width: 761px;
+        height: 70rem;
+        margin: 0px 4px;
+    }
+
+    .video__container{
+        margin-left: .5rem;
+        margin-right: .5rem;
+        width: 400px;
+        height: 75rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 210px;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "video__proximamente video__proximamente video__proximamente video__proximamente"
+        "video__proximamente video__proximamente video__proximamente video__proximamente"
+        "recomendados recomendados recomendados recomendados"
+        "recomendados recomendados recomendados recomendados"
+        "recomendados recomendados recomendados recomendados"
+        
+    }
+
+    .video__proximamente{
+        height: 27rem;
+    }
+
+    .proximo{
+        height: 27rem;
+        margin-top: 0;;
+    }
+    .proximo__titulo{
+        margin-top: 1rem;
+    }
+
+    .proximo__txt{
+        margin-top: .5rem;;
+    }
+
+    .recomendados{
+        height: 42rem;
+    }
+
+    .video-recomendado{
+        margin-top: 1rem;
+    }
+
+    
+     
+    /*ESTE SOLO LE PUSE Q NO APAREZCA PARA Q PUEDA ACOMODAR LO OTRO, DESPUES LO REGRESO*/
+    .menu-izquierda{
+        display:none;
+    }    
+
+    .footer{
+        bottom: 0;
+        font-size: 15px;
+    }
+    
 }
