@@ -58,6 +58,10 @@ body{
     margin-top: -50px;
 }
 
+.header-btn-responsive{
+    display:none;
+}
+
 .button-header{
     width: 140px;
     height: 40px;
@@ -341,6 +345,10 @@ body{
     transition: 0.5s;    
 }
 
+.menu__hamburguesa{
+    display:none
+}
+
 .footer{
     font-family: 'Star Jedi', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
@@ -359,11 +367,47 @@ body{
         padding: 0 10px;
     } 
 
-    .titulo-logo{
+
+
+    /*.titulo-logo{
         display: none;
-    }
+    }*/
 
     .header-btn{
+        display:none;
+    }
+
+    .header-btn-responsive{
+        display: inline-block;
+        justify-content:space-between;
+        text-align: center;
+        
+    }
+    
+
+    .button-responsive{
+        width: 47px;
+        height: 47px;
+        margin: 0 1rem;
+        background: rgba(122, 117, 114, 0.24);
+        border-radius: 40%;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border: 1px solid rgba(165, 179, 45, 0.53);
+        color: #ffe820;
+        font-family: 'Folklore', sans-serif;
+        letter-spacing: 5px;
+        font-size: 30px;
+        text-align: center;
+        
+        
+        
+    }
+
+    
+
+    /*.header-btn{
         margin-right: 3px;
         margin-left: 7px;
         margin-top: 10px ; 
@@ -376,7 +420,8 @@ body{
         height: 3.5rem;
         width: 9rem;
         font-size: 14px;
-    }
+    } */
+
 
     .nav-middle{
         width: 750px;
@@ -385,6 +430,8 @@ body{
         flex-wrap: wrap;
         align-items:center;
         justify-content:center;
+        margin-right: 0;
+        margin-left: .6rem;
         
     }
 
@@ -415,7 +462,7 @@ body{
     }
 
     .main{
-        width: 761px;
+        width: 759px;
         height: 70rem;
         margin: 0px 4px;
     }
@@ -423,7 +470,7 @@ body{
     .video__container{
         margin-left: .5rem;
         margin-right: .5rem;
-        width: 762px;
+        width: 759px;
         height: 75rem;
         grid-template-columns: none;
         grid-auto-rows: 210px;
@@ -460,12 +507,39 @@ body{
         margin-top: 1rem;
     }
 
-    
-     
     /*ESTE SOLO LE PUSE Q NO APAREZCA PARA Q PUEDA ACOMODAR LO OTRO, DESPUES LO REGRESO*/
     .menu-izquierda{
         display:none;
-    }    
+    }   
+    .menu__hamburguesa{
+        display:block
+    }
+
+
+    /*.menu-izquierda{
+        background-color: transparent;
+        border: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+
+    .opciones img span {
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: 0.25s;
+    }
+
+    .opciones img{
+        display:block;
+        position: relative;
+    }
+
+    .opciones img:hover span {
+        width: auto;
+        padding: 0 20px;
+        overflow:visible;
+    } */
 
     .footer{
         bottom: 0;
@@ -476,7 +550,8 @@ body{
    
 }
 
-@media only screen and (min-width:414px) and (max-width:800px) {
+
+@media only screen and (max-width:415px){
     .header{
         width: 400px;
         height: 85px;
@@ -487,29 +562,40 @@ body{
         display: none;
     }
 
+
     .header-btn{
-        margin-right: 3px;
-        margin-left: 7px;
-        margin-top: 10px ; 
-        display: flex;
+        display:none;
+    }
+
+    .header-btn-responsive{
+        display: inline-block;
+        justify-content:space-between;
+        text-align: center;
         
-        align-items:baseline;
     }
+    
+    
+    .button-responsive{
+        width: 47px;
+        height: 47px;
+        margin: 0 1rem;
+        background: rgba(122, 117, 114, 0.24);
+        border-radius: 40%;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border: 1px solid rgba(165, 179, 45, 0.53);
+        color: #ffe820;
+        font-family: 'Folklore', sans-serif;
+        letter-spacing: 5px;
+        font-size: 30px;
+        text-align: center;
+        
+        
+        
+    }
+    
 
-    .button-header{
-        height: 2.5rem;
-        width: 8rem;
-        font-size: 13px;
-    }
-
-    #button-1{
-        margin-right: 3px;
-        margin-left: 3px;
-    }
-
-    #button-2{
-        margin-left: 3px;
-    }
 
     .nav-middle{
         width: 400px;
@@ -517,7 +603,9 @@ body{
         justify-content:center;
         flex-wrap: wrap;
         align-items:center;
-        justify-content:center;        
+        justify-content:center;      
+        margin-right: 0;  
+        margin-left: .4rem; 
     }
 
     .nav-btn{
@@ -548,9 +636,9 @@ body{
     }
 
     .main{
-        width: 761px;
-        height: 70rem;
-        margin: 0px 4px;
+        width: 410px;
+        height: 93rem;
+        margin: 0px 0;
     }
 
     .video__container{
@@ -587,7 +675,8 @@ body{
     }
 
     .recomendados{
-        height: 42rem;
+        height: 65rem;
+        display: block;
     }
 
     .video-recomendado{
@@ -605,5 +694,6 @@ body{
         bottom: 0;
         font-size: 15px;
     }
+
     
 }
