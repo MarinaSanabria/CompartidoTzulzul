@@ -261,6 +261,11 @@ body{
     overflow: hidden; 
 }
 
+.proximo:hover{
+    transform: scale(1.08);
+    transition: 0.5s;    
+}
+
 .proximo__txt{
     margin-top: 1rem;
     color: #ffe820;
@@ -428,7 +433,7 @@ body{
         "video__proximamente video__proximamente video__proximamente video__proximamente"
         "recomendados recomendados recomendados recomendados"
         "recomendados recomendados recomendados recomendados"
-        "recomendados recomendados recomendados recomendados"
+        "recomendados recomendados recomendados recomendados"      
     }
 
     .video__proximamente{
