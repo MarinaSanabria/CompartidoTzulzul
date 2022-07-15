@@ -460,6 +460,7 @@ body{
     }
 
     .video__container{
+        margin-top: 1.2rem; /*prueba */
         margin-left: .5rem;
         margin-right: .5rem;
         width: 759px;
@@ -506,6 +507,12 @@ body{
         backdrop-filter: none;
         height: 2rem;
         width: .5rem;
+        margin-top: -1rem;/* prueba*/
+        /*padding-left: 380px;  prueba */
+        
+        padding-left: .8rem;
+        position:absolute;/* prueba*/
+
     }   
 
     .menu__hamburguesa{
@@ -521,8 +528,8 @@ body{
     
     ul{
         position: fixed;
-        width:40%;
-        height: 100vh;
+        width:42%;
+        height: 50vh;
         background:rgba(0, 0, 0, 0.90);
         top: 220px;
         left: -100%;
@@ -674,6 +681,7 @@ body{
     }
 
     .video__container{
+        margin-top: 1.2rem; /* prueba*/
         margin-left: .5rem;
         margin-right: .5rem;
         width: 400px;
@@ -721,6 +729,9 @@ body{
         backdrop-filter: none;
         height: 2rem;
         width: .5rem;
+        margin-top: -1rem;/* prueba*/
+        padding-left: 190px; /* prueba*/
+        position:absolute;/* prueba*/
     }   
     .menu__hamburguesa{ 
         display:block;
@@ -735,7 +746,8 @@ body{
     
     ul{
         position: fixed;
-        width:65%;
+        /*width:65%;*/
+        width: 100%; /*prueba */
         height: 55%;
         background:rgba(0, 0, 0, 0.90);
         top: 330px;
@@ -749,7 +761,7 @@ body{
         display: flex;
         margin: 35px 0;
         line-height: 30px;
-        margin-left: 3rem;
+        margin-left: 7rem;
     }
 
     .menu-izquierda ul li img span{
