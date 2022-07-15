@@ -730,7 +730,7 @@ body{
         height: 2rem;
         width: .5rem;
         margin-top: -1rem;/* prueba*/
-        padding-left: 190px; /* prueba*/
+        padding-left: 192px !important; /* prueba*/
         position:absolute;/* prueba*/
     }   
     .menu__hamburguesa{ 
