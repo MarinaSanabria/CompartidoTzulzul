@@ -130,7 +130,6 @@ body{
     cursor: pointer;
 }
 
-
 .fa-solid, .fa-magnifying-glass{
     height: 10px;
     align-items: center;
@@ -212,7 +211,6 @@ body{
     transition: 0.8s;
     border: 1px solid rgba(218, 195, 117, 0.3);
 }
-
 
 .video__container{
     display: grid;
@@ -349,6 +347,10 @@ body{
     display:none
 }
 
+.btn-opciones{
+    display: none;
+}
+
 #check{
     display:none;
 }
@@ -406,8 +408,7 @@ body{
         align-items:center;
         justify-content:center;
         margin-right: 0;
-        margin-left: .6rem;
-        
+        margin-left: .6rem;   
     }
 
     .nav-btn{
@@ -420,6 +421,7 @@ body{
         margin-bottom: .5rem;
         margin-left: 1.8rem;
     }
+
     .header__input{
         /*height: 1rem;*/
         width: 200px;
@@ -483,13 +485,17 @@ body{
         height: 2rem;
         width: .5rem;
     }   
+
     .menu__hamburguesa{
         display:block;
         z-index: 9;
         margin-left: .3rem;
-        
     }
 
+    .btn-opciones{
+        width: 50px;
+        display: block;
+    }
     
     ul{
         position: fixed;
@@ -500,6 +506,12 @@ body{
         left: -100%;
         text-align:left;
         transition: all .5s;
+        border-radius: 20px;
+        background: rgba(7, 7, 6, 0.24); 
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(122, 117, 114, 0.53);   
     }
 
     .menu-izquierda ul li{
@@ -672,13 +684,15 @@ body{
         height: 2rem;
         width: .5rem;
     }   
-    .menu__hamburguesa{
-        
+    .menu__hamburguesa{ 
         display:block;
         margin-left: .3rem;
         z-index: 9;  
     }
 
+    .btn-opciones{
+        width: 50px;
+    }
     
     ul{
         position: fixed;
@@ -715,8 +729,6 @@ body{
     #check:checked ~label{
         position: fixed;
     }
-
-    
     
     .menu-izquierda ul li img {
         margin-right: .8rem;
@@ -727,6 +739,4 @@ body{
         bottom: 0;
         font-size: 15px;
     }
-
-    
 }
