@@ -578,6 +578,15 @@ body{
         font-size: 30px;
         text-align: center;     
     }
+
+    
+    
+    .button__search{
+        
+        
+        padding-right: 0;
+        margin-right: 0;
+    }
     
     .nav-middle{
         width: 400px;
