@@ -367,8 +367,6 @@ body{
         padding: 0 10px;
     } 
 
-
-
     /*.titulo-logo{
         display: none;
     }*/
@@ -380,8 +378,7 @@ body{
     .header-btn-responsive{
         display: inline-block;
         justify-content:space-between;
-        text-align: center;
-        
+        text-align: center;    
     }
     
 
@@ -399,10 +396,7 @@ body{
         font-family: 'Folklore', sans-serif;
         letter-spacing: 5px;
         font-size: 30px;
-        text-align: center;
-        
-        
-        
+        text-align: center;   
     }
 
     
@@ -570,15 +564,13 @@ body{
     .header-btn-responsive{
         display: inline-block;
         justify-content:space-between;
-        text-align: center;
-        
+        text-align: center;    
     }
-    
-    
+     
     .button-responsive{
         width: 47px;
         height: 47px;
-        margin: 0 1rem;
+        margin: 0 5px 0 5px;
         background: rgba(122, 117, 114, 0.24);
         border-radius: 40%;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -589,14 +581,9 @@ body{
         font-family: 'Folklore', sans-serif;
         letter-spacing: 5px;
         font-size: 30px;
-        text-align: center;
-        
-        
-        
+        text-align: center;     
     }
     
-
-
     .nav-middle{
         width: 400px;
         height: 230px;
@@ -622,13 +609,13 @@ body{
     }
 
     .header__search{
-        width: 4rem;
+        width: 190px;
         margin-left: 5px;
     }
  
     .header__input{
         /*height: 1rem;*/
-        width: 20px;
+        width: 100px;
     }
     
     .button__search{
@@ -655,7 +642,6 @@ body{
         "recomendados recomendados recomendados recomendados"
         "recomendados recomendados recomendados recomendados"
         "recomendados recomendados recomendados recomendados"
-        
     }
 
     .video__proximamente{
