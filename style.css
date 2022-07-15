@@ -730,7 +730,7 @@ body{
 
     .btn-opciones{
         width: 30px;
-        display: block;
+        /* display: block; */
     }
     
     ul{
