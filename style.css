@@ -729,9 +729,9 @@ body{
         backdrop-filter: none;
         height: 2rem;
         width: .5rem;
-        margin-top: -1rem;/* prueba*/
-        padding-left: 192px !important; /* prueba*/
-        position:absolute;/* prueba*/
+        margin-top: -1rem;
+        padding-left: 192px ; 
+        position:absolute; 
     }   
     .menu__hamburguesa{ 
         display:block;
@@ -741,7 +741,7 @@ body{
 
     .btn-opciones{
         width: 30px;
-        /* display: block; */
+        display: block; 
     }
     
     ul{
