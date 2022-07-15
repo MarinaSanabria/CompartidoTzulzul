@@ -515,7 +515,7 @@ body{
     }
 
     .btn-opciones{
-        width: 50px;
+        width: 30px;
         display: block;
     }
     
@@ -607,7 +607,6 @@ body{
         font-size: 30px;
         text-align: center;     
     }
-
 
     .button-responsive:hover{
         animation: animate 3s linear infinite;
@@ -730,7 +729,7 @@ body{
     }
 
     .btn-opciones{
-        width: 50px;
+        width: 30px;
         display: block;
     }
     
