@@ -349,6 +349,10 @@ body{
     display:none
 }
 
+#check{
+    display:none;
+}
+
 .footer{
     font-family: 'Star Jedi', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
@@ -509,11 +513,55 @@ body{
 
     /*ESTE SOLO LE PUSE Q NO APAREZCA PARA Q PUEDA ACOMODAR LO OTRO, DESPUES LO REGRESO*/
     .menu-izquierda{
-        display:none;
+        background-color: transparent;
+        border: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        height: 2rem;
+        width: .5rem;
     }   
     .menu__hamburguesa{
-        display:block
+        display:block;
+        z-index: 9;
+        
     }
+
+    
+    ul{
+        position: fixed;
+        width:40%;
+        height: 100vh;
+        background:#000;
+        top: 80px;
+        left: -100%;
+        text-align:left;
+        
+        transition: all .5s;
+    }
+
+    .menu-izquierda ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        margin-left: 3rem;
+    }
+
+    .menu-izquierda ul li img span{
+        font-size: 30px;
+    }
+
+    li img span:hover, li img span.active{
+        background: none;
+        color:#ffe820;
+    }
+
+    #check:checked ~ul{
+        left: 0;
+        z-index: 8;
+    }
+    
+
+
 
 
     /*.menu-izquierda{
