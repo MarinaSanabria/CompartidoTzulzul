@@ -144,6 +144,7 @@ body{
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(122, 117, 114, 0.53);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -400,6 +401,27 @@ body{
         text-align: center;
     }
 
+    .button-responsive:hover{
+        animation: animate 3s linear infinite;
+        cursor: pointer;
+    }
+    
+    
+    @keyframes animate{
+        0%{ 
+            box-shadow: 0 0 0 0 #ffe820;
+        }
+        40%{ 
+            box-shadow: 0 0 0 30px rgba(206, 209, 0, 0);
+        }
+        80%{ 
+            box-shadow: 0 0 0 30px rgba(0, 206, 209, 0);
+        }
+        100%{ 
+            box-shadow: 0 0 0 0 rgba(0, 206, 209, 0);
+        }
+    }
+
     .nav-middle{
         width: 750px;
         height: 7.2rem;
@@ -590,6 +612,26 @@ body{
         font-size: 30px;
         text-align: center;     
     }
+
+    .button-responsive:hover{
+        animation: animate 3s linear infinite;
+        cursor: pointer;
+    }
+    
+    @keyframes animate{
+        0%{ 
+            box-shadow: 0 0 0 0 #ffe820;
+        }
+        40%{ 
+            box-shadow: 0 0 0 30px rgba(206, 209, 0, 0);
+        }
+        80%{ 
+            box-shadow: 0 0 0 30px rgba(0, 206, 209, 0);
+        }
+        100%{ 
+            box-shadow: 0 0 0 0 rgba(0, 206, 209, 0);
+        }
+    }
     
     .nav-middle{
         width: 400px;
@@ -692,6 +734,7 @@ body{
 
     .btn-opciones{
         width: 50px;
+        display: block;
     }
     
     ul{
@@ -703,6 +746,12 @@ body{
         left: -100%;
         text-align:left;
         transition: all .5s;
+        border-radius: 20px;
+        background: rgba(7, 7, 6, 0.24); 
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(122, 117, 114, 0.53);  
     }
 
     .menu-izquierda ul li{
